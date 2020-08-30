@@ -13,7 +13,7 @@ public class CountiesOriginal {
         }
        bubbleSort(counties);
         
-    //    insertionSort(counties);
+       insertionSort(counties);
         
     //    selectionSort(counties);
         
@@ -21,7 +21,7 @@ public class CountiesOriginal {
         
    //     quickSort(counties);
     }
-    
+  //Day 1  
     public static void bubbleSort(CountyTax[] original) {
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
@@ -46,10 +46,23 @@ public class CountiesOriginal {
     	System.out.println("Sort finished.");
     }
     
+    //Day 2
     public static void insertionSort(CountyTax[] original) {
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
-    	
+        CountyTax iter = new CountyTax();
+        int j;
+    	for(int i = 1;i < sorted.length; i++)
+        {
+            iter = sorted[i];
+            j = i - 1;
+            while( j >= 0 && iter.getTax() < sorted[j].getTax())
+            {
+                sorted[j + 1] = sorted[j];
+                j--;
+            }
+            sorted[j + 1] = iter;
+        }
     	printArray(sorted);
     	long endTime = System.currentTimeMillis();
     	System.out.println("This sort took: " + ((double)endTime - startTime)/1000 + " seconds");
