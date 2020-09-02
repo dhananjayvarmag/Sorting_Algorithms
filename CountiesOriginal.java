@@ -74,7 +74,7 @@ public class CountiesOriginal {
     
     //Day 3
     
-    public static void selectionSort(CountyTax[] original) {
+    public static void selectionSort(CountyTax[] original) {   
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
     	int n = sorted.length, min;
