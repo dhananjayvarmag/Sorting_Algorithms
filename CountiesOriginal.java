@@ -11,17 +11,19 @@ public class CountiesOriginal {
         for(int i = 0; i < counties.length; i++) {
         	counties[i] = new CountyTax(taxRate[i], county[i]);
         }
-       bubbleSort(counties);
+    //   bubbleSort(counties);
         
-       insertionSort(counties);
+    //    insertionSort(counties);
         
     //    selectionSort(counties);
         
     //    mergeSort(counties);
         
-   //     quickSort(counties);
+    //    quickSort(counties);
     }
-  //Day 1  
+    
+    //Day 1
+    
     public static void bubbleSort(CountyTax[] original) {
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
@@ -47,32 +49,49 @@ public class CountiesOriginal {
     }
     
     //Day 2
+    
     public static void insertionSort(CountyTax[] original) {
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
-        CountyTax iter = new CountyTax();
-        int j;
-    	for(int i = 1;i < sorted.length; i++)
-        {
-            iter = sorted[i];
-            j = i - 1;
-            while( j >= 0 && iter.getTax() < sorted[j].getTax())
-            {
-                sorted[j + 1] = sorted[j];
-                j--;
-            }
-            sorted[j + 1] = iter;
-        }
+    	 CountyTax iter = new CountyTax();
+         int j;
+     	 for(int i = 1;i < sorted.length; i++)
+          {
+              iter = sorted[i];
+              j = i - 1;
+              while( j >= 0 && iter.getTax() < sorted[j].getTax())
+              {
+                  sorted[j + 1] = sorted[j];
+                  j--;
+              }
+              sorted[j + 1] = iter;
+          }
     	printArray(sorted);
     	long endTime = System.currentTimeMillis();
     	System.out.println("This sort took: " + ((double)endTime - startTime)/1000 + " seconds");
     	System.out.println("Sort finished.");
     }
     
+    //Day 3
+    
     public static void selectionSort(CountyTax[] original) {
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
-    	
+    	int n = sorted.length, min;
+    	for(int i = 0;i < n-1; i++)
+    	{
+    		min = i;
+    		for(int j = i + 1;j < n; j++)
+    		{
+    			if(sorted[j].getTax() < sorted[min].getTax())
+    			{
+    				min = j;
+    			}
+    		}
+    		CountyTax temp = sorted[min]; 
+    		sorted[min] = sorted[i]; 
+    		sorted[i] = temp;
+    	}
     	printArray(sorted);
     	long endTime = System.currentTimeMillis();
     	System.out.println("This sort took: " + ((double)endTime - startTime)/1000 + " seconds");
