@@ -74,7 +74,7 @@ public class CountiesOriginal {
     
     //Day 3
     
-    public static void selectionSort(CountyTax[] original) {   
+    public static void selectionSort(CountyTax[] original) {
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
     	int n = sorted.length, min;
@@ -108,15 +108,45 @@ public class CountiesOriginal {
     	System.out.println("Sort finished.");
     }
     
+    //Day 4
+    
     public static void quickSort(CountyTax[] original) {
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
-    	
+    	quickSortSort(sorted, 0, sorted.length - 1);
     	printArray(sorted);
     	long endTime = System.currentTimeMillis();
     	System.out.println("This sort took: " + ((double)endTime - startTime)/1000 + " seconds");
     	System.out.println("Sort finished.");
     }
+    
+    private static void quickSortSort(CountyTax[] sorted, int i, int j) {
+		if(i < j) {
+			int part = partition(sorted, i, j);
+			quickSortSort(sorted, i, part - 1);
+			quickSortSort(sorted, part + 1, j);
+		}
+		
+	}
+
+	private static int partition(CountyTax[] sorted, int low, int high) {
+		double pivot = sorted[high].getTax();
+		int i = low - 1;
+		for(int j = low; j < high; j++) {
+			if(sorted[j].getTax() < pivot) {
+				i++;
+				CountyTax temp = sorted[i]; 
+				sorted[i] = sorted[j]; 
+                sorted[j] = temp; 
+			}
+		}
+		CountyTax temp = sorted[i+1]; 
+        sorted[i+1] = sorted[high]; 
+        sorted[high] = temp; 
+  
+        return i+1; 
+		
+	}
     
     private static void printArray(CountyTax[] original) {
     	for(int i = 0; i < original.length; i++) {
