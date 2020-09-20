@@ -13,13 +13,13 @@ public class CountiesOriginal {
         }
     //   bubbleSort(counties);
         
-    //    insertionSort(counties);
+    //   insertionSort(counties);
         
-    //    selectionSort(counties);
+    //   selectionSort(counties);
         
-    //    mergeSort(counties);
+    //   mergeSort(counties);
         
-    //    quickSort(counties);
+    //   quickSort(counties);
     }
     
     //Day 1
@@ -98,15 +98,58 @@ public class CountiesOriginal {
     	System.out.println("Sort finished.");
     }
     
+    //Day 5
+    
     public static void mergeSort(CountyTax[] original) {
     	CountyTax[] sorted = Arrays.copyOf(original, original.length);
     	long startTime = System.currentTimeMillis();
-    	
+    	mergeSortSort(sorted, sorted.length);
     	printArray(sorted);
     	long endTime = System.currentTimeMillis();
     	System.out.println("This sort took: " + ((double)endTime - startTime)/1000 + " seconds");
     	System.out.println("Sort finished.");
     }
+    
+    private static void mergeSortSort(CountyTax[] sorted, int n) {
+    	if (n < 2) {
+            return;
+        }
+        int mid = n / 2;
+        CountyTax[] l = new CountyTax[mid];
+        CountyTax[] r = new CountyTax[n - mid];
+     
+        for (int i = 0; i < mid; i++) {
+            l[i] = sorted[i];
+        }
+        for (int i = mid; i < n; i++) {
+            r[i - mid] = sorted[i];
+        }
+        mergeSortSort(l, mid);
+        mergeSortSort(r, n - mid);
+     
+        mergeSortMerge(sorted, l, r, mid, n - mid);
+	}
+    
+    private static void mergeSortMerge(CountyTax[] sorted, CountyTax[] l, CountyTax[] r, int left, int right) {
+    	int i = 0;
+    	int j = 0;
+    	int k = 0;
+        while (i < left && j < right) {
+            if (l[i].getTax() <= r[j].getTax()) {
+                sorted[k++] = l[i++];
+            }
+            else {
+                sorted[k++] = r[j++];
+            }
+        }
+        while (i < left) {
+            sorted[k++] = l[i++];
+        }
+        while (j < right) {
+            sorted[k++] = r[j++];
+        }
+        
+	}
     
     //Day 4
     
