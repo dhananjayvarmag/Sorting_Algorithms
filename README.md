@@ -4,8 +4,9 @@ In this course (offered by Coursera), I have learnt how to create an application
 
 I have observed the time taken by different sorting algorithms by running a program, which calculates the time taken by different sorting algorithms.The results are as below,
 
+OUTPUT:
 
-Welcome to the Sorting Tester
+Welcome to the Sorting Tester  
 This program demonstrates different sorting methods and their effciencies using Missouri County Sales Tax Data    
 
 Bubble Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    : 0.067 seconds  
