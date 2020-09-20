@@ -11,5 +11,5 @@ This program demonstrates different sorting methods and their effciencies using 
 Bubble Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 0.067 seconds  
 Insertion Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0.041 seconds  
 Selection Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0.053 seconds  
-Merge Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 0.046 seconds  
-Quick Sort took  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : 0.005 seconds
+Merge Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 0.046 seconds  
+Quick Sort took  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : 0.005 seconds
