@@ -6,7 +6,7 @@ I have observed the time taken by different sorting algorithms by running a prog
 
 
 Welcome to the Sorting Tester
-This program demonstrates different sorting methods and their effciencies using Missouri County Sales Tax Data    
+This program demonstrates different sorting methods and their effciencies using Missouri County Sales Tax Data    </br>
 Bubble Sort took    : 0.067 seconds  
 Insertion Sort took : 0.041 seconds  
 Selection Sort took : 0.053 seconds  
