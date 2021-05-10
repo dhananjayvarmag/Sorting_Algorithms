@@ -12,5 +12,5 @@ This program demonstrates different sorting methods and their effciencies using 
 Bubble Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    : 0.067 seconds&nbsp;&nbsp;&nbsp;Time Complexity:O(n^2)  
 Insertion Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0.041 seconds&nbsp;&nbsp;&nbsp;Time Complexity:O(n^2)  
 Selection Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0.053 seconds&nbsp;&nbsp;&nbsp;Time Complexity:O(n^2)  
-Merge Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;: 0.046 seconds&nbsp;&nbsp;&nbsp;Time Complexity:O(n*logn)  
+Merge Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;: 0.046 seconds&nbsp;&nbsp;&nbsp;Time Complexity:        O(nlogn)  
 Quick Sort took  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : 0.005 seconds&nbsp;&nbsp;&nbsp;Average Time Complexity:O(n^2)  
