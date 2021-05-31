@@ -14,3 +14,6 @@ Insertion Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0.041 seco
 Selection Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0.053 seconds&nbsp;&nbsp;&nbsp;Average Time Complexity:O(n^2)  
 Merge Sort took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;: 0.046 seconds&nbsp;&nbsp;&nbsp;Average Time Complexity:O(nlogn)  
 Quick Sort took  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   : 0.005 seconds&nbsp;&nbsp;&nbsp;Average Time Complexity:O(nlogn)  
+<br>
+## Course Certificate
+![certificate](/certificate.jpg)
